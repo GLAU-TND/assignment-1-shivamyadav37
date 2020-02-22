@@ -14,6 +14,37 @@ public class Person {
         this.emailOfContact = emailOfContact;
     }
 
+    public String getContactFirstName() {
+        return contactFirstName;
+    }
+
+    public String getContactLastName() {
+        return contactLastName;
+    }
+
+    public String[] getContactNumber() {
+        return contactNumber;
+    }
+
+    public String getEmailOfContact() {
+        return emailOfContact;
+    }
+
+    public void setContactFirstName(String contactFirstName) {
+        this.contactFirstName = contactFirstName;
+    }
+
+    public void setContactLastName(String contactLastName) {
+        this.contactLastName = contactLastName;
+    }
+
+    public void setContactNumber(String[] contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+
+    public void setEmailOfContact(String emailOfContact) {
+        this.emailOfContact = emailOfContact;
+    }
 }
 
 
