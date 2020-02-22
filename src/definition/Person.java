@@ -13,7 +13,7 @@ public class Person {
         this.contactNumber = contactNumber;
         this.emailOfContact = emailOfContact;
     }
-
+    //Creating Getters.
     public String getContactFirstName() {
         return contactFirstName;
     }
@@ -30,6 +30,7 @@ public class Person {
         return emailOfContact;
     }
 
+    //Created Setters
     public void setContactFirstName(String contactFirstName) {
         this.contactFirstName = contactFirstName;
     }
@@ -45,6 +46,8 @@ public class Person {
     public void setEmailOfContact(String emailOfContact) {
         this.emailOfContact = emailOfContact;
     }
+
+
 }
 
 
