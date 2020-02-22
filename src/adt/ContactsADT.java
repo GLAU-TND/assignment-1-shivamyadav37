@@ -6,11 +6,11 @@ public interface ContactsADT<E> {
     //for viewing Contacts
     void viewContacts();
     //for Searching contacts from the Contact List
-    void searchInContacts();
+    void searchInContacts(E item);
     //for Deleting any contact from Contact List
-    void deleteFromContacts();
+    boolean deleteFromContacts(int index);
     //for Printing Contacts from Contact List
-    void printContact();
+   // void printContact();
 
 
 }
