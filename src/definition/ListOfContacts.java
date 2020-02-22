@@ -18,7 +18,14 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         size++;
     }
 
-    private
+    //Created addAfter method
+    private void addAfter (Node <E> node , E data){
+        node.next = new Node<>(data , node.next);
+        size++;
+
+    }
+
+
 
 
 
