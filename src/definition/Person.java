@@ -71,18 +71,17 @@ public class Person {
 
     public String toString(){
         System.out.println("---Here are all your contacts---\n");
-        final StringBuffer strbfr = new StringBuffer("-------- * -------- * -------- * --------\n");
-        strbfr.append("First Name: ").append(contactFirstName).append("\n");
-        strbfr.append("Last Name: ").append(contactLastName).append("\n");
-        strbfr.append("Contact Number: ").append("\n");
+        final StringBuilder strafe = new StringBuilder("-------- * -------- * -------- * --------\n");
+        strafe.append("First Name: ").append(contactFirstName).append("\n");
+        strafe.append("Last Name: ").append(contactLastName).append("\n");
+        strafe.append("Contact Number: ").append("\n");
         for (int i =0 ; i<contactNumber.length ; i++){
-                strbfr.append((contactNumber[0] !=null));
+                strafe.append((contactNumber[0] !=null));
 
         }
-        strbfr.append("Email Address: ").append(emailOfContact).append("\n");
-        strbfr.append()
-
-
+        strafe.append("Email Address: ").append(emailOfContact).append("\n");
+        strafe.append("-------- * -------- * -------- * --------\n");
+        return strafe.toString();
 
     }
 
