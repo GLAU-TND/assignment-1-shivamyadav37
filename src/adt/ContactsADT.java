@@ -7,7 +7,7 @@ public interface ContactsADT<E> {
     void viewContacts();
     //for Searching contacts from the Contact List
     void searchInContacts();
-    //
+    //for Deleting any contact from Contact List
     void deleteFromContacts();
     void printContact();
 
