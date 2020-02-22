@@ -67,7 +67,18 @@ public class Person {
      *
      * @return  a string representation of the object.
      */
+
+
     public String toString(){
+        final StringBuffer strbfr = new StringBuffer("-------- * -------- * -------- * --------\n");
+        strbfr.append("First Name: ").append(contactFirstName).append("\n");
+        strbfr.append("Last Name: ").append(contactLastName).append("\n");
+        strbfr.append("Contact Number: ");
+        for (int i =0 ; i<contactNumber.length ; i++){
+                strbfr.append()
+
+        }
+
 
 
     }
