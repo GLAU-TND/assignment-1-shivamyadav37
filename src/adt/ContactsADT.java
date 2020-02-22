@@ -9,6 +9,7 @@ public interface ContactsADT<E> {
     void searchInContacts();
     //for Deleting any contact from Contact List
     void deleteFromContacts();
+    //for Printing Contacts from Contact List
     void printContact();
 
 
