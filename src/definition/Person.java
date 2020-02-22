@@ -7,6 +7,13 @@ public class Person {
     private String[] contactNumber;
     private String emailOfContact;
 
+    public Person(String contactFirstName, String contactLastName, String[] contactNumber, String emailOfContact) {
+        this.contactFirstName = contactFirstName;
+        this.contactLastName = contactLastName;
+        this.contactNumber = contactNumber;
+        this.emailOfContact = emailOfContact;
+    }
 
 }
+
 
