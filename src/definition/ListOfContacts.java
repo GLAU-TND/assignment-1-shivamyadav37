@@ -12,7 +12,13 @@ public class ListOfContacts<E> implements ContactsADT<E> {
     private int size= 0;
     private int counter = 0;
 
-    private void addFirst();
+    //Created addFirst method
+    private void addFirst(E data){
+        head = new Node<>(data,head);
+        size++;
+    }
+
+    private
 
 
 
