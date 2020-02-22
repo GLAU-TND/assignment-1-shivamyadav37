@@ -76,7 +76,8 @@ public class Person {
         strafe.append("Last Name: ").append(contactLastName).append("\n");
         strafe.append("Contact Number: ").append("\n");
         for (int i =0 ; i<contactNumber.length ; i++){
-                strafe.append((contactNumber[0] !=null));
+                strafe.append((contactNumber[0] != null && i == 0 ? contactNumber[0] : "") + (contactNumber[1] != null && i == 1 ? ", " + contactNumber[1] : "") +
+                        (contactNumber[2] != null && i == 2 ? ", " + contactNumber[i] : ""));
 
         }
         strafe.append("Email Address: ").append(emailOfContact).append("\n");
