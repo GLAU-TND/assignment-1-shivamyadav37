@@ -74,7 +74,7 @@ public class Person {
         final StringBuffer strafe = new StringBuffer("-------- * -------- * -------- * --------\n");
         strafe.append("First Name: ").append(contactFirstName).append("\n");
         strafe.append("Last Name: ").append(contactLastName).append("\n");
-        strafe.append("Contact Number(s): ").append("\n");
+        strafe.append("Contact Number(s): ");//.append("\n");
         for (int i =0 ; i<contactNumber.length ; i++){
                 strafe.append((contactNumber[0] != null && i == 0 ? contactNumber[0] : "") + (contactNumber[1] != null && i == 1 ? ", " + contactNumber[1] : "") +
                         (contactNumber[2] != null && i == 2 ? ", " + contactNumber[i] : ""));
