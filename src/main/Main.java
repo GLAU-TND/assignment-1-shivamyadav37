@@ -30,7 +30,7 @@ public class Main {
                     contactLastName = scanner.nextLine();
                     listOfContactsObj.setName(contactFirstName, contactLastName);
                     listOfContactsObj.setFirstNameInList(contactFirstName);
-                    System.out.println("Contact Number(s):");
+                    System.out.println("Contact Number:");
                     contactNumber[0] = scanner.nextLine();
                     for (int i = 1; i <= 4; i++) {
                         System.out.println("Would you like to add another contact number?");
