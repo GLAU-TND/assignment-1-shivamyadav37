@@ -14,7 +14,7 @@ public class Main {
         String[] contactNumber = new String[5];
         String emailOfContact;
         boolean ctr;
-        while (ctr==true){
+        while (ctr=true){
             System.out.println("Welcome to Shivam's Contact List App");
             System.out.println("Press 1 to add a new contact\n" +"Press 2 to view all contacts\n" +
                     "Press 3 to search for a contact\n" + "Press 4 to delete a contact\n" + "Press 5 to exit program ");
@@ -41,6 +41,16 @@ public class Main {
                             break;
                         }
                     }
+                    System.out.println("Would you like to add email address?");
+                    System.out.println("Email Address:");
+                    emailOfContact = scanner.next();
+                    Person person = new Person(contactFirstName,contactLastName,contactNumber,emailOfContact);
+                    listOfContactsObj.addContact(person);
+                    break;
+                case 2:
+
+
+
 
                     
 
