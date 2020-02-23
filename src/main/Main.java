@@ -30,7 +30,7 @@ public class Main {
                     contactLastName = scanner.nextLine();
                     listOfContactsObj.setName(contactFirstName, contactLastName);
                     listOfContactsObj.setFirstNameInList(contactFirstName);
-                    System.out.println("Contact Number:");
+                    System.out.println("Contact Number(s):");
                     contactNumber[0] = scanner.nextLine();
                     for (int i = 1; i <= 4; i++) {
                         System.out.println("Would you like to add another contact number?");
@@ -56,8 +56,8 @@ public class Main {
                                 listOfContactsObj.searchInContacts(name);
                             case 4:
                                 //System.out.println("Here are your contacts");
-                                for (int i = 0; i < listOfContactsObj.getArrayOfFirstName().size(); i++) {
-                                    System.out.println((i + 1) + ". " + listOfContactsObj.getArrayOfFirstName().get(i));
+                                for (int i = 0; i < listOfContactsObj.getListName().size(); i++) {
+                                    System.out.println((i + 1) + ". " + listOfContactsObj.getListName().get(i));
 
                                 }
                                 System.out.println("Press the number against the contact to delete it: ");
