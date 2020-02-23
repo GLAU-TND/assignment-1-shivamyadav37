@@ -30,10 +30,10 @@ public class Main {
                     contactLastName = scanner.nextLine();
                     listOfContactsObj.setName(contactFirstName,contactLastName);
                     listOfContactsObj.setFirstNameInList(contactFirstName);
-                    System.out.println("Contact Number:\n");
+                    System.out.println("Contact Number:");
                     contactNumber[0]=scanner.nextLine();
                     for (int i = 1; i <= 4; i++) {
-                        System.out.println("Would you like to add new Number?");
+                        System.out.println("Would you like to add another contact number?");
                         char response = scanner.next().charAt(0);
                         if (response == 'y') {
                             contactNumber[i] = scanner.next();
@@ -41,8 +41,14 @@ public class Main {
                             break;
                         }
                     }
-                    System.out.println("Would you like to add email address?");
-                    //char response = scanner().next().charAt(0);
+                    for (int i = 1; i <= 4; i++) {
+                        System.out.println("Would you like to add email address?");
+                        char response = scanner.next().charAt(0);
+                        if (response == 'y') {
+                            emailOfContact[i] = scanner.next();
+                        } else {
+                            break;
+                        }
 
                     System.out.println("Email Address:");
                     emailOfContact = scanner.next();
