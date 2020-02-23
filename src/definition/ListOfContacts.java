@@ -35,7 +35,7 @@ public class ListOfContacts<E> implements ContactsADT<E> {
             throw new IndexOutOfBoundsException(Integer.toString(index));
         }
         else if(size == 0){
-            addFirst(E data);
+            addFirst((E)data);
         }
         else{
             Node<E> count = getNode(index - 1);
