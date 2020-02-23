@@ -3,6 +3,7 @@ package definition;
 import adt.ContactsADT;
 import org.w3c.dom.Node;
 
+import java.time.Period;
 import java.util.ArrayList;
 
 public class ListOfContacts<E> implements ContactsADT<E> {
@@ -92,7 +93,7 @@ public class ListOfContacts<E> implements ContactsADT<E> {
     }
 
     public boolean addContact(E item) {
-        addContact(size , data);
+        addContact(size ,data);
         return false;
     }
 
@@ -116,6 +117,23 @@ public class ListOfContacts<E> implements ContactsADT<E> {
     private static class Node<E>{
         private Person data;
         private Node<E> next;
+
+        private Node(Person data,Node<E> next){
+            this.data = data;
+            this.next = next;
+            }
+        private Person getData() {
+            return data;
+        }
+        private void setData(Person data) {
+            this.data = data;
+        }
+        private Node<E> getNext() {
+            return next;
+        }
+        private void setNext(Node<E> next) {
+            this.next = next;
+        }
 
     }
 }
