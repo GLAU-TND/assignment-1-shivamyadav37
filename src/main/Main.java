@@ -62,7 +62,7 @@ public class Main {
                       int number = scanner.nextInt();
                       String temp = listOfContactsObj.getArrayOfFirstName().get(number - 1).toString();
                       listOfContactsObj.deleteFromContacts(number);
-                      System.out.println(temp + " has been deleted from your contacts");
+                      System.out.println(temp + "'s contact deleted from list!");
                       break;
                 case 5:
                       System.out.println("Exited Succesfully");
