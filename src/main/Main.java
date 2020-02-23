@@ -48,8 +48,13 @@ public class Main {
                     listOfContactsObj.addContact(person);
                     break;
                 case 2:
-
-
+                    listOfContactsObj.viewContacts();
+                    break;
+                case 3:
+                    System.out.println("You could search for a contact from their first names: ");
+                    String name = scanner.next();
+                    listOfContactsObj.searchInContacts(name);
+                case 4:
 
 
                     
