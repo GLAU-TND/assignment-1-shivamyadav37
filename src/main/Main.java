@@ -30,9 +30,9 @@ public class Main {
                     contactLastName = scanner.nextLine();
                     listOfContactsObj.setName(contactFirstName,contactLastName);
                     listOfContactsObj.setFirstNameInList(contactFirstName);
-                    System.out.println("Contact Number:");
+                    System.out.println("Contact Number:\n");
                     contactNumber[0]=scanner.nextLine();
-                    for (int i = 1; i <= 2; i++) {
+                    for (int i = 1; i <= 4; i++) {
                         System.out.println("Would you like to add new Number?");
                         char response = scanner.next().charAt(0);
                         if (response == 'y') {
@@ -42,6 +42,8 @@ public class Main {
                         }
                     }
                     System.out.println("Would you like to add email address?");
+                    //char response = scanner().next().charAt(0);
+
                     System.out.println("Email Address:");
                     emailOfContact = scanner.next();
                     Person person = new Person(contactFirstName,contactLastName,contactNumber,emailOfContact);
