@@ -55,9 +55,8 @@ public class Main {
                       listOfContactsObj.searchInContacts(name);
                 case 4:
 
-                      for (int i = 0; i < listOfContactsObj.getListName().size(); i++) {
-                      System.out.println((i + 1) + ". " + listOfContactsObj.getListName().get(i));
-
+                      for (int i = 0; i < listOfContactsObj.getArrayOfFirstName().size(); i++) {
+                      System.out.println((i + 1) + ". " + listOfContactsObj.getArrayOfFirstName().get(i));
                       }
                       System.out.println("Press the number against the contact to delete it: ");
                       int number = scanner.nextInt();
