@@ -113,8 +113,15 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         if (counter!=0){
             System.out.println(counter + "match found!");
             for (int i = 0; i <listNameFirstName.size();i++){
+                if (name.compareTo(listNameFirstName.get(i).toString())==0){
+                    Node <E> personNode=getNode(i);
+                    System.out.println(personNode.getData().toString());
+                }
 
             }
+        }
+        else {
+            System.out.println("NO RESULTS FOUND!");
         }
 
     }
