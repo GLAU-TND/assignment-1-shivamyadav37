@@ -35,7 +35,7 @@ public class ListOfContacts<E> implements ContactsADT<E> {
             throw new IndexOutOfBoundsException(Integer.toString(index));
         }
         else if(size == 0){
-            addFirst((E)data);
+            addFirst(data);
         }
         else{
             Node<E> count = getNode(index - 1);
@@ -54,12 +54,16 @@ public class ListOfContacts<E> implements ContactsADT<E> {
 
     }
 
-    public void setName(String contactFirstName) {
-        this.listName = listName;
+    public void setName(String contactFirstName , String contactLastName) {
+        listName.add(contactFirstName+ " " + contactLastName);
     }
 
     public ArrayList getListName() {
         return listName;
+    }
+    public boolean addContact(E data) {
+        addContact(size ,data);
+        return false;
     }
 
     private Person deleteFromContactsFirst(){
@@ -92,10 +96,7 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         return response;
     }
 
-    public boolean addContact(E item) {
-        addContact(size ,data);
-        return false;
-    }
+
 
     @Override
     public void viewContacts() {
