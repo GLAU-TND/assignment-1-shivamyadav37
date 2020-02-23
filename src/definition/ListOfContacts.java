@@ -1,7 +1,7 @@
 package definition;
 
 import adt.ContactsADT;
-import org.w3c.dom.Node;
+
 
 import java.time.Period;
 import java.util.ArrayList;
@@ -110,12 +110,21 @@ public class ListOfContacts<E> implements ContactsADT<E> {
     @Override
     public boolean deleteFromContacts(int index) {
         boolean response=false;
-        if (index-1<0 || (index-1>getSize()){
+        if (index-1<0 || (index-1>getSize())){
             throw new IndexOutOfBoundsException(Integer.toString(index-1));
-
         }
 
-
+        else if (index-1==0){
+            deleteFromContactsFirst();
+            listName.remove(index-1);
+            response=true;
+        }
+        else {
+            Node<E> lastNode= getNode(index-1);
+            deleteFromContactsAfter(lastNode);
+            listName.remove(index-1);
+            response = true;
+        }
         return response;
     }
 
