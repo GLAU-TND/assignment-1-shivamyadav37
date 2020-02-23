@@ -128,6 +128,14 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         return response;
     }
 
+    public void setFirstNameInList(String name) {
+        listNameFirstName.add(name);
+    }
+
+    public ArrayList getArrayOfFirstName() {
+        return listNameFirstName;
+    }
+
     private static class Node<E>{
         private Person data;
         private Node<E> next;
