@@ -81,7 +81,7 @@ public class Person {
 
         }
         strafe.append("\nEmail Address: ").append(emailOfContact).append("\n");
-        strafe.append("-------- * -------- * -------- * --------\n");
+        strafe.append("-------- * -------- * -------- * --------");
         return strafe.toString();
 
     }
