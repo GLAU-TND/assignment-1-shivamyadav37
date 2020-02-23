@@ -104,7 +104,18 @@ public class ListOfContacts<E> implements ContactsADT<E> {
 
     @Override
     public void searchInContacts(String name) {
-        for ()
+        for (int i = 0; i<listNameFirstName.size();i++){
+            if (name.compareTo(listNameFirstName.get(i).toString())==0){
+                counter++;
+            }
+        }
+
+        if (counter!=0){
+            System.out.println(counter + "match found!");
+            for (int i = 0; i <listNameFirstName.size();i++){
+
+            }
+        }
 
     }
 
