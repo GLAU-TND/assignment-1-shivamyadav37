@@ -15,13 +15,13 @@ public class ListOfContacts<E> implements ContactsADT<E> {
 
     //Created addFirst method
     private void addFirst(E data){
-        head = new Node<>(data,head);
+        head = new Node<>((Person) data,head);
         size++;
     }
 
     //Created addAfter method
     private void addAfter (Node <E> node , E data){
-        node.next = new Node<>(data , node.next);
+        node.next = new Node<>((Person) data , node.next);
         size++;
     }
 
@@ -118,7 +118,7 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         private Person data;
         private Node<E> next;
 
-        private Node(Person data,Node<E> next){
+        private Node(Person data , Node<E> next){
             this.data = data;
             this.next = next;
             }
