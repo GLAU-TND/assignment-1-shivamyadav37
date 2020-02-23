@@ -188,7 +188,5 @@ public class ListOfContacts<E> implements ContactsADT<E> {
             this.next = next;
         }
 
-
-
     }
 }
