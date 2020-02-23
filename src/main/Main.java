@@ -66,9 +66,13 @@ public class Main {
                     listOfContactsObj.deleteFromContacts(number);
                     System.out.println(temp + " has been deleted from your contacts");
                     break;
-
-
-                    
+                case 5:
+                    System.out.println("Exited Succesfully");
+                    ctr = false;
+                    break;
+                default:
+                    System.out.println("Please Enter a Valid Input");
+                    break;
 
 
             }
