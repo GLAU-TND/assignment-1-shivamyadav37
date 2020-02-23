@@ -11,7 +11,7 @@ public class Main {
         ListOfContacts listOfContactsObj = new ListOfContacts();
         String contactFirstName;
         String contactLastName;
-        String[] contactNumber;
+        String[] contactNumber = new String[5];
         String emailOfContact;
         boolean ctr;
         while (ctr==true){
@@ -25,6 +25,24 @@ public class Main {
                 case 1:
                     System.out.println("You have chosen to add a new contact: \n" +"Please enter the name of the Person");
                     System.out.println("First Name:");
+                    contactFirstName = scanner.nextLine();
+                    System.out.println("Last Name:");
+                    contactLastName = scanner.nextLine();
+                    listOfContactsObj.setName(contactFirstName,contactLastName);
+                    listOfContactsObj.setFirstNameInList(contactFirstName);
+                    System.out.println("Contact Number:");
+                    contactNumber[0]=scanner.nextLine();
+                    for (int i = 1; i <= 2; i++) {
+                        System.out.println("Would you like to add new Number?");
+                        char response = scanner.next().charAt(0);
+                        if (response == 'y') {
+                            contactNumber[i] = scanner.next();
+                        } else {
+                            break;
+                        }
+                    }
+
+                    
 
 
             }
