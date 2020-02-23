@@ -16,16 +16,16 @@ public class Main {
         boolean ctr;
         while (ctr==true){
             System.out.println("Welcome to Shivam's Contact List App");
-            System.out.println("Press 1 to add a new contact\n" +
-                    "Press 2 to view all contacts\n" +
-                    "Press 3 to search for a contact\n" +
-                    "Press 4 to delete a contact\n" +
-                    "Press 5 to exit program ");
+            System.out.println("Press 1 to add a new contact\n" +"Press 2 to view all contacts\n" +
+                    "Press 3 to search for a contact\n" + "Press 4 to delete a contact\n" + "Press 5 to exit program ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
             switch (choice){
                 case 1:
+                    System.out.println("You have chosen to add a new contact: \n" +"Please enter the name of the Person");
+                    System.out.println("First Name:");
+
 
             }
 
