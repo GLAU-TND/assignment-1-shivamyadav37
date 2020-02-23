@@ -103,7 +103,8 @@ public class ListOfContacts<E> implements ContactsADT<E> {
     }
 
     @Override
-    public void searchInContacts(E item) {
+    public void searchInContacts(String name) {
+        for ()
 
     }
 
