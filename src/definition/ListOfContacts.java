@@ -28,22 +28,43 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         return size;
     }
 
-    @Override
-    public boolean addContact(int index , E data) {
+    //@Override
+    public void addContact(int index , E data) {
         if(index<0 || index >size){
             throw new IndexOutOfBoundsException(Integer.toString(index));
-
         }
         else if(size == 0){
             addFirst(E data);
-
         }
         else{
             Node<E> count = getNode(index - 1);
             addAfter(count,data);
-
         }
         //return false;
+    }
+
+    private Node<E> getNode(int index){
+        Node<E> response = head;
+        for(int i= 0; i < index ;i++){
+            response= response.getNext();
+
+        }
+        return response;
+
+    }
+
+    public void setName(String contactFirstName) {
+        this.listName = listName;
+    }
+
+    public ArrayList getListName() {
+        return listName;
+    }
+
+    @Override
+    public boolean addContact(E item) {
+        addContact(size , data);
+        return false;
     }
 
     @Override
