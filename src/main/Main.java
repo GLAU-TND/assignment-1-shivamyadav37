@@ -53,6 +53,7 @@ public class Main {
                       System.out.println("You could search for a contact from their first name: ");
                       String name = scanner.next();
                       listOfContactsObj.searchInContacts(name);
+                      break;
                 case 4:
                       for (int i = 0; i < listOfContactsObj.getArrayOfFirstName().size(); i++) {
                       System.out.println((i + 1) + ". " + listOfContactsObj.getArrayOfFirstName().get(i));
