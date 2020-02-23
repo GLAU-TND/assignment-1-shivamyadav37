@@ -101,7 +101,7 @@ public class ListOfContacts<E> implements ContactsADT<E> {
     @Override
     public void viewContacts() {
         if (size!=0){
-            System.out.println("---Here are all your contacts---");
+            //System.out.println("---Here are all your contacts---");
             for (int i=0;i<size;i++){
                 Person data = this.getNode(i).getData();
                 System.out.println(data);
