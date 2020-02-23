@@ -50,7 +50,7 @@ public class Main {
                          listOfContactsObj.viewContacts();
                          break;
                     case 3:
-                         System.out.println("You could search for a contact from their first names: ");
+                         System.out.println("You could search for a contact from their first name: ");
                          String name = scanner.next();
                          listOfContactsObj.searchInContacts(name);
                     case 4:
