@@ -61,7 +61,24 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         return listName;
     }
 
-    @Override
+    private Person deleteFromContactsFirst(){
+        Person response = null;
+        Node<E> count= head;
+        if (head != null){
+            head=head.getNext();
+                    }
+        if (count!=null){
+            size--;
+            response = count.getData();
+
+        }
+        return response;
+    }
+
+    private Person deleteFromContactsAfter(){
+
+    }
+
     public boolean addContact(E item) {
         addContact(size , data);
         return false;
