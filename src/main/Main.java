@@ -54,7 +54,7 @@ public class Main {
                          String name = scanner.next();
                          listOfContactsObj.searchInContacts(name);
                     case 4:
-                         //System.out.println("Here are your contacts");
+
                          for (int i = 0; i < listOfContactsObj.getListName().size(); i++) {
                          System.out.println((i + 1) + ". " + listOfContactsObj.getListName().get(i));
 

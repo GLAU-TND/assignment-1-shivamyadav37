@@ -70,7 +70,7 @@ public class Person {
 
 
     public String toString(){
-        System.out.println("---Here are all your contacts---\n");
+        System.out.println("---Here are all your contacts---");
         final StringBuffer strafe = new StringBuffer("-------- * -------- * -------- * --------\n");
         strafe.append("First Name: ").append(contactFirstName).append("\n");
         strafe.append("Last Name: ").append(contactLastName).append("\n");
