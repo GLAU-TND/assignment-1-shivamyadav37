@@ -24,10 +24,10 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         node.next = new Node<>((Person) data , node.next);
         size++;
     }
-
     public int getSize() {
         return size;
     }
+
 
     //@Override
     public void addContact(int index , E data) {
@@ -99,6 +99,17 @@ public class ListOfContacts<E> implements ContactsADT<E> {
 
     @Override
     public void viewContacts() {
+        if (size!=0){
+            System.out.println("---Here are all your contacts---");
+            for (int i=0;i<size;i++){
+                Person data = this.getNode(i).getData();
+                System.out.println(data);
+            }
+        }
+        else {
+            System.out.println("No Contact Added Yet");
+        }
+
 
     }
 
@@ -175,6 +186,8 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         private void setNext(Node<E> next) {
             this.next = next;
         }
+
+
 
     }
 }
