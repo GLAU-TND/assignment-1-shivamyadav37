@@ -75,8 +75,20 @@ public class ListOfContacts<E> implements ContactsADT<E> {
         return response;
     }
 
-    private Person deleteFromContactsAfter(){
+    private Person deleteFromContactsAfter(Node<E> node) {
+        Person response = null;
+        Node<E> count = node.getNext();
 
+        if (count != null) {
+            node.next = count.getNext();
+            size--;
+            response = count.getData();
+        }
+        if (count == null) {
+            node = null;
+            size--;
+        }
+        return response;
     }
 
     public boolean addContact(E item) {
@@ -96,6 +108,14 @@ public class ListOfContacts<E> implements ContactsADT<E> {
 
     @Override
     public boolean deleteFromContacts(int index) {
-        return false;
+
+
+        return response;
+    }
+
+    private static class Node<E>{
+        private Person data;
+        private Node<E> next;
+
     }
 }
