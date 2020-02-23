@@ -12,7 +12,7 @@ public class Main {
         String contactFirstName;
         String contactLastName;
         String[] contactNumber = new String[5];
-        String emailOfContact = new String;
+        String emailOfContact = new String();
         boolean ctr;
         while (ctr = true) {
             System.out.println("Welcome to Shivam's Contact List App");
