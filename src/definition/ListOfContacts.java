@@ -109,6 +109,11 @@ public class ListOfContacts<E> implements ContactsADT<E> {
 
     @Override
     public boolean deleteFromContacts(int index) {
+        boolean response=false;
+        if (index-1<0 || (index-1>getSize()){
+            throw new IndexOutOfBoundsException(Integer.toString(index-1));
+
+        }
 
 
         return response;
