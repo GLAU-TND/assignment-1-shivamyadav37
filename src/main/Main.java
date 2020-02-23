@@ -46,32 +46,33 @@ public class Main {
                          Person person = new Person(contactFirstName, contactLastName, contactNumber, emailOfContact);
                          listOfContactsObj.addContact(person);
                            break;
-                    case 2:
-                         listOfContactsObj.viewContacts();
-                         break;
-                    case 3:
-                         System.out.println("You could search for a contact from their first name: ");
-                         String name = scanner.next();
-                         listOfContactsObj.searchInContacts(name);
-                    case 4:
+                case 2:
+                     listOfContactsObj.viewContacts();
+                     break;
+                case 3:
+                      System.out.println("You could search for a contact from their first name: ");
+                      String name = scanner.next();
+                      listOfContactsObj.searchInContacts(name);
+                case 4:
 
-                         for (int i = 0; i < listOfContactsObj.getListName().size(); i++) {
-                         System.out.println((i + 1) + ". " + listOfContactsObj.getListName().get(i));
+                      for (int i = 0; i < listOfContactsObj.getListName().size(); i++) {
+                      System.out.println((i + 1) + ". " + listOfContactsObj.getListName().get(i));
 
-                         }
-                         System.out.println("Press the number against the contact to delete it: ");
-                         int number = scanner.nextInt();
-                         String temp = listOfContactsObj.getArrayOfFirstName().get(number - 1).toString();
-                         listOfContactsObj.deleteFromContacts(number);
-                         System.out.println(temp + " has been deleted from your contacts");
-                         break;
-                    case 5:
-                         System.out.println("Exited Succesfully");
-                         ctr = false;
-                         break;
-                    default:
-                         System.out.println("Please Enter a Valid Input");
-                         break;
+                      }
+                      System.out.println("Press the number against the contact to delete it: ");
+                      int number = scanner.nextInt();
+                      String temp = listOfContactsObj.getArrayOfFirstName().get(number - 1).toString();
+                      listOfContactsObj.deleteFromContacts(number);
+                      System.out.println(temp + " has been deleted from your contacts");
+                      break;
+                case 5:
+                      System.out.println("Exited Succesfully");
+                      ctr = false;
+                      break;
+                default:
+                      System.out.println("Please Enter a Valid Input");
+                      break;
+
                         }
                     }
             }
