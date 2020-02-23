@@ -54,7 +54,6 @@ public class Main {
                       String name = scanner.next();
                       listOfContactsObj.searchInContacts(name);
                 case 4:
-
                       for (int i = 0; i < listOfContactsObj.getArrayOfFirstName().size(); i++) {
                       System.out.println((i + 1) + ". " + listOfContactsObj.getArrayOfFirstName().get(i));
                       }
